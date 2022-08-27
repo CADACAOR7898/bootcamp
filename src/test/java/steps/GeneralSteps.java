@@ -57,8 +57,8 @@ public class GeneralSteps {
 		home.goSearchItem(item);
 	   }
 	
-	@Step("I validate result '{result}'")
-	@Then("^I validate result '(.*)'$")
+	@Step("I validate result {result}")
+	@Then("^I validate result (.*)$")
 	   public void ValidateResultItem(String result) throws InterruptedException, IOException{
 		home.validateResultItem(result);
 	   }
